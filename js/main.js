@@ -133,6 +133,7 @@ TxtType.prototype.tick = function () {
     }, delta);
 };
 
+console.log("What are you doing? onii chan...")
 console.log("___███████▀◢▆▅▃ 　　　   　　 　　　 ▀▀████ ___");
 console.log("___██████▌◢▀█▓▓█◣   　　　　　　▂▃▃　 ████ ___");
 console.log("__▐▐█████▍▌▐▓▓▉　　　　　　　◢▓▓█ ▼ ████ ___");

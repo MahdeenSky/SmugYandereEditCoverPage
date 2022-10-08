@@ -94,6 +94,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: black;
+  overflow: hidden;
   -webkit-transition: all 300ms cubic-bezier(0.694, 0.048, 0.335, 1);
   transition: all 300ms cubic-bezier(0.694, 0.048, 0.335, 1);
 }
@@ -111,8 +112,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100%;
+  height: auto;
+  width: auto;
+  min-width: 100%;
   overflow: hidden;
   opacity: 0;
   -webkit-transition: opacity 1300ms cubic-bezier(0.694, 0.048, 0.335, 1) 1300ms;
@@ -221,6 +223,35 @@ body {
   background-position: 100%;
 }
 
+@media screen and (max-width: 1335px) {
+  #particles-js .video {
+    position: absolute;
+    bottom: 0;
+    /* changes depending on the current width of the device */
+    left: -10%;
+    right: auto;
+    top: auto;
+    height: 110%;
+    min-width: 1%;
+    width: auto;
+
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  #particles-js .video {
+    position: absolute;
+    bottom: 0;
+    /* changes depending on the current width of the device */
+    left: -30%;
+    top: auto;
+    height: 100%;
+    min-width: 1%;
+    width: auto;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   #particles-js .intro p.para span.name {
     position: relative;
@@ -253,14 +284,14 @@ body {
   }
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 970px) {
   #particles-js .intro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   #particles-js .intro .profilPicBorder {
     margin-right: 0;
@@ -275,15 +306,28 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  #particles-js .video {
+    position: absolute;
+    bottom: 0;
+    /* changes depending on the current width of the device */
+    left: -30%;
+    top: auto;
+    height: 100%;
+    min-width: 1%;
+    width: auto;
   }
 }
 
@@ -296,6 +340,30 @@ body {
   }
   #particles-js .intro .follow {
     font-size: 1rem;
+  }
+
+  #particles-js .video {
+    position: absolute;
+    bottom: 0;
+    /* changes depending on the current width of the device */
+    left: -50%;
+    top: auto;
+    height: 100%;
+    min-width: 1%;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #particles-js .video {
+    position: absolute;
+    bottom: 0;
+    /* changes depending on the current width of the device */
+    left: -50%;
+    top: auto;
+    height: 100%;
+    min-width: 1%;
+    width: auto;
   }
 }
 
